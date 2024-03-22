@@ -1,0 +1,60 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  background: rgba(36, 36, 36, 100%);
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+
+.mobile {
+  width: 360px;
+  height: 775px;
+  overflow: hidden;
+  transform: scale(0.85);
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(233deg,
+  rgba(163, 197, 237, 1) 0%,
+  rgba(137, 159, 240, 1) 50%,
+  rgba(199, 156, 232, 1) 100%);
+  background-size: 100vw 100vh;
+  position: relative;
+}
+
+.middle {
+  padding: 28px;
+  padding-top: 0;
+}
+
+.middle .data {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.middle .data {
+  position: relative;
+}
+
+.info_box {
+  width: 360px;
+  height: 775px;
+  overflow: hidden;
+  transform: scale(0.85);
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  background: rgba(36, 36, 36, 100%);
+}
+
+.mobile .page {
+  width: 360px;
+}

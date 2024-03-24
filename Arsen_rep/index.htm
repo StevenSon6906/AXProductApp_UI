@@ -4,41 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXProductAPP</title>
-    <!--Font-->
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <!--CSS-->
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="mobile">
-        <div class="data">
-            <div class="info_box">
-
-            </div>
+    <div class="container">
+      <div class="top-container">
+        <div class="select"> 
+          <select class="custom-select">
+            <option value="0">Window #1 </option>
+            <option value="1">Window #2</option>
+            <option value="3">Window #3</option>
+          </select>
         </div>
-    </div>
-    <div class="box_1">
-      Temperature
-    </div>
-    <br> 
-    <div class="box_1">
-      Humidity
-    </div>
-    <br> 
-    <div class="box_1">
-      Windspeed
-    </div>
-    <br> 
-    <div class="box_2">
-      Turn off alarm?
-    </div>
-    <br> 
-    <br>
-    <div class="box_3">
-      Opened
+      
+        <div class="plus-button">+</div>
+      
+        <div class="tree-dot-menu">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <br>
+
+      <div class="data">Data</div>
+
+      <div class="common-box-styles box-1">
+        Temperature
+      </div>
+
+      <div class="common-box-styles box-1">
+        Humidity
+      </div>
+
+      <div class="common-box-styles box-1">
+        Windspeed
+      </div>
+
+      <div class="common-box-styles box-2">
+        Turn off alarm?
+      </div>
+
+      <div class="common-box-styles box-3">
+        Opened
+      </div>
     </div>  
   </body>
 </html>

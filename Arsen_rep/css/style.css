@@ -1,99 +1,142 @@
-html,
 body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: sans-serif;
-  height: 100%;
-  background: rgba(36, 36, 36, 100%);
-  display: flex;
-  align-items: left;
-  justify-content: center;
-}
-
-.mobile {
-  width: 360px;
-  height: 775px;
-  overflow: hidden;
-  transform: scale(0.85);
-  display: flex;
-  border-radius: 25px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(233deg,
-  rgba(163, 197, 237, 1) 0%,
-  rgba(137, 159, 240, 1) 50%,
-  rgba(199, 156, 232, 1) 100%);
+  background-image: linear-gradient(-135deg, rgba(163, 197, 237, 1) 0%, rgba(137, 159, 240, 1) 50%, rgba(199, 156, 232, 1) 100%);
   background-size: 100vw 100vh;
-  position: relative;
-}
-
-.middle {
-  padding: 28px;
-  padding-top: 0;
-}
-
-.middle .data {
-  padding: 5px 15px;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-}
-
-.middle .data {
-  position: relative;
-}
-
-.info_box {
-  width: 360px;
-  height: 775px;
-  overflow: hidden;
-  transform: scale(0.85);
-  display: flex;
-  border-radius: 25px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  background: rgba(36, 36, 36, 100%);
-}
-
-.mobile .page {
-  width: 360px;
-}
-
-.box_1 {
-  width: 297px; 
-  height: 62px; 
-  background-color: #f0f0f0; 
-  border-radius: 10px; 
-  padding: 20px;  
-  box-sizing: border-box; 
+  justify-content: center; 
   align-items: center;
-  text-align: center; 
-  line-height: 62px; 
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25); 
 }
-.box_2 {
+
+.container {
+  text-align: center; 
+}
+
+.top-container {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.custom-select {
+  width: 200px; 
+  padding: 10px; 
+  font-size: 16px;
+  font-weight: bold; 
+  border-radius: 5px; 
+  color: #333; 
+  outline: none;
+  background-color: transparent; 
+  border: none; 
+  margin-top: 20px;
+}
+
+.custom-select::-ms-expand {
+  background-color: transparent;
+}
+
+.custom-select:hover {
+  border-color: #999; 
+}
+
+.custom-select:focus {
+  border-color: #007bff; 
+}
+
+.custom-select option {
+  background-color: rgba(255, 255, 255, 0.5); 
+  color: #333; 
+}
+
+.custom-select option:checked {
+  color: #333; 
+}
+
+.custom-select option:checked::before {
+  background-color: transparent; 
+  content: none;
+}
+
+.plus-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-image: url("Images/plus_button.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  color: #333;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  background-position: center;
+  background-clip: padding-box;
+  position: relative; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.plus-button:hover {
+  background-color: transparent;
+}
+
+.tree-dot-menu {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; 
+  margin-left: auto; 
+  margin-top: 20px; 
+}
+
+.dot{
+  width: 4px;
+  height: 4px;
+  background-color: #000; 
+  border-radius: 50%;
+}
+
+.data{
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.common-box-styles {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.box-1 {
+  width: 297px;
+  height: 62px;
+}
+
+.box-2 {
   width: 297px;
   height: 112px;
-  background-color: #f0f0f0; 
-  border-radius: 10px; 
-  padding: 20px; 
-  box-sizing: border-box; 
-  align-items: center;
-  text-align: center; 
-  line-height: 62px; 
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25); 
 }
 
-.box_3 {
+.box-3 {
   width: 286px;
   height: 109px;
-  background-color: #f0f0f0; 
-  border-radius: 50px; 
-  padding: 20px; 
-  box-sizing: border-box; 
-  text-align: center; 
-  align-items: center;
-  line-height: 62px; 
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);; 
-
+  border-radius: 70px; 
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(164, 164, 164, 1);
+  margin: 60px auto;
 }
